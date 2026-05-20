@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Background Gridlines and Ambient Glow */
+.bg-grid-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(14, 165, 233, 0.085) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 165, 233, 0.085) 1px, transparent 1px);
+  
+  /* Standard mask: fades out at bottom (70% to 95%) and radially */
+  mask-image: 
+    radial-gradient(circle at 50% 30%, black 50%, transparent 95%),
+    linear-gradient(to bottom, black 70%, transparent 95%);
+  mask-composite: intersect;
+  -webkit-mask-image: 
+    radial-gradient(circle at 50% 30%, black 50%, transparent 95%),
+    linear-gradient(to bottom, black 70%, transparent 95%);
+  -webkit-mask-composite: source-in;
+}
+
+/* Blurred grid layer at the bottom */
+.bg-grid-pattern-blurred {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(14, 165, 233, 0.085) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 165, 233, 0.085) 1px, transparent 1px);
+  filter: blur(3.5px);
+  
+  /* Blur mask: only visible at the bottom transition area (65% to 100%) */
+  mask-image: 
+    radial-gradient(circle at 50% 30%, black 50%, transparent 95%),
+    linear-gradient(to bottom, transparent 65%, black 85%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-image: 
+    radial-gradient(circle at 50% 30%, black 50%, transparent 95%),
+    linear-gradient(to bottom, transparent 65%, black 85%, transparent 100%);
+  -webkit-mask-composite: source-in;
+}
+
+.dark .bg-grid-pattern,
+.dark .bg-grid-pattern-blurred {
+  background-image: 
+    radial-gradient(circle at 50% 30%, rgba(14, 165, 233, 0.07) 0%, transparent 75%),
+    linear-gradient(to right, rgba(14, 165, 233, 0.085) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 165, 233, 0.085) 1px, transparent 1px);
+  background-size: auto, 50px 50px, 50px 50px;
+}
+
+.fixed-grid {
+  position: fixed;
+}
+
+/* Custom Keyframe Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.12;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.22;
+    transform: scale(1.08);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 7s ease-in-out infinite;
+}
+
+/* Universal transition class for themes */
+.transition-theme {
+  transition: background-color 0.4s ease, border-color 0.4s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Gradient Section Divider */
+.section-divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 5%, rgba(14, 165, 233, 0.45) 30%, rgba(14, 165, 233, 0.45) 70%, transparent 95%);
+}
+
+/* Navbar Gradient Border */
+.navbar-gradient-border {
+  position: relative;
+}
+
+.navbar-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem; /* rounded-2xl */
+  padding: 1px; /* border thickness */
+  background: linear-gradient(to right, rgba(14, 165, 233, 0.4), rgba(6, 182, 212, 0.4), rgba(14, 165, 233, 0.1));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.navbar-gradient-border.navbar-scrolled::before {
+  background: linear-gradient(to right, rgba(14, 165, 233, 0.85), rgba(6, 182, 212, 0.85), rgba(14, 165, 233, 0.25));
+}
+
+.dark .navbar-gradient-border::before {
+  background: linear-gradient(to right, rgba(14, 165, 233, 0.55), rgba(6, 182, 212, 0.55), rgba(14, 165, 233, 0.15));
+}
+
+.dark .navbar-gradient-border.navbar-scrolled::before {
+  background: linear-gradient(to right, rgba(14, 165, 233, 0.9), rgba(6, 182, 212, 0.9), rgba(14, 165, 233, 0.3));
+}
+
+/* Glass Card styling */
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(14, 165, 233, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(14, 165, 233, 0.04);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .glass-card {
+  background: rgba(10, 10, 12, 0.45);
+  border: 1px solid rgba(14, 165, 233, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card:hover {
+  border-color: rgba(14, 165, 233, 0.3);
+  box-shadow: 0 12px 40px 0 rgba(14, 165, 233, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Gradient Border for Glass Cards */
+.glow-border-card {
+  position: relative;
+}
+
+.glow-border-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem; /* rounded-3xl */
+  padding: 1px;
+  background: linear-gradient(to bottom right, rgba(14, 165, 233, 0.25), transparent, rgba(99, 102, 241, 0.15));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.glow-border-card:hover::before {
+  background: linear-gradient(to bottom right, rgba(14, 165, 233, 0.5), transparent, rgba(99, 102, 241, 0.35));
+}
+
+/* Live Node Animation for Interactive Dashboard */
+@keyframes pulse-node {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.4);
+  }
+  50% {
+    transform: scale(1.12);
+    box-shadow: 0 0 12px 6px rgba(14, 165, 233, 0.2);
+  }
+}
+
+.animate-pulse-node {
+  animation: pulse-node 2s infinite ease-in-out;
+}
+
+@keyframes draw-flow {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw-flow {
+  stroke-dasharray: 10, 10;
+  animation: draw-flow 15s linear infinite;
+}
+
+/* Process Timeline Connector Path */
+.timeline-dot {
+  position: relative;
+}
+.timeline-dot::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid rgba(14, 165, 233, 0.4);
+  animation: pulse-node 2.5s infinite;
+}
+
+/* Dashboard Specific Background Gridlines with High Visibility */
+.bg-dashboard-grid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-size: 45px 45px;
+  background-image: 
+    linear-gradient(to right, rgba(14, 165, 233, 0.13) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 165, 233, 0.13) 1px, transparent 1px);
+}
+
+.dark .bg-dashboard-grid {
+  background-image: 
+    linear-gradient(to right, rgba(14, 165, 233, 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 165, 233, 0.16) 1px, transparent 1px);
+}

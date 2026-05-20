@@ -1,0 +1,324 @@
+[
+  {
+    "id": "plan_1784546344672",
+    "userId": "guest_user",
+    "onboarding": {
+      "age": 27,
+      "gender": "Female",
+      "height": 165,
+      "weight": 58,
+      "activityLevel": "Moderately Active",
+      "healthGoals": [
+        "Lose Weight",
+        "Better Sleep"
+      ],
+      "sleepHours": 7.5,
+      "wakeTime": "06:30 AM",
+      "bedtime": "10:30 PM",
+      "waterIntake": 2.5,
+      "occupation": "Software Engineer",
+      "smoking": "No",
+      "alcohol": "No",
+      "exerciseFrequency": "3-4 days/week",
+      "medicalHistory": [
+        "None"
+      ],
+      "dietType": "Vegetarian",
+      "foodLikes": "Oats, Paneer, Spinach, Lentils",
+      "foodDislikes": "Mushrooms",
+      "foodAllergies": "None",
+      "cuisinePreference": "Indian",
+      "budgetPreference": "Moderate"
+    },
+    "plan": {
+      "executiveSummary": "This personalized wellness plan for a 27-year-old moderately active vegetarian female focuses on achieving weight loss and improving sleep quality. It incorporates a balanced, Indian-cuisine-inspired diet, targets a daily calorie intake of approximately 1750 kcal, and includes a structured intermediate workout routine. Emphasis is placed on consistent hydration, adequate sleep, and mindful eating habits to support overall well-being.",
+      "welcomeMessage": "Hello! I'm delighted to help you on your journey to better health and wellness. This plan is crafted specifically for you, a dedicated Software Engineer, to help you achieve your goals of weight loss and improved sleep. Remember, consistency and self-compassion are key!",
+      "estimatedDailyCalories": 1750,
+      "waterIntakeGoalLiters": 3,
+      "sleepRecommendationHours": 8,
+      "dailyDietPlan": {
+        "breakfast": {
+          "name": "Oats with Berries & Nuts",
+          "calories": 380,
+          "protein": "12g",
+          "carbs": "60g",
+          "fat": "10g",
+          "fiber": "9g",
+          "description": "1/2 cup rolled oats cooked with water or almond milk, topped with 1/2 cup mixed berries (strawberries, blueberries), 1 tbsp chopped almonds, and a pinch of cinnamon. Provides sustained energy and fiber.",
+          "time": "08:00 AM"
+        },
+        "lunch": {
+          "name": "Spinach & Paneer Curry with Brown Rice & Lentil Dal",
+          "calories": 600,
+          "protein": "35g",
+          "carbs": "70g",
+          "fat": "22g",
+          "fiber": "13g",
+          "description": "A generous serving of homemade Palak Paneer (spinach and Indian cheese curry) with 3/4 cup brown rice and 1 cup simple Toor Dal (lentil soup). A complete meal rich in protein and complex carbs.",
+          "time": "01:00 PM"
+        },
+        "dinner": {
+          "name": "Mixed Vegetable and Chickpea Stir-fry with Whole Wheat Roti",
+          "calories": 520,
+          "protein": "25g",
+          "carbs": "70g",
+          "fat": "15g",
+          "fiber": "12g",
+          "description": "Stir-fry with broccoli, bell peppers, carrots, and 1 cup chickpeas, seasoned with Indian spices. Served with 2 small whole wheat rotis. Light yet satisfying, packed with vegetables and plant protein.",
+          "time": "07:30 PM"
+        },
+        "snacks": {
+          "name": "Greek Yogurt with Apple & Walnuts",
+          "calories": 250,
+          "protein": "18g",
+          "carbs": "30g",
+          "fat": "8g",
+          "fiber": "5g",
+          "description": "1 cup plain Greek yogurt (a great vegetarian protein source) with one small apple and 5-6 walnuts. Helps curb cravings and provides healthy fats.",
+          "time": "04:30 PM"
+        },
+        "hydrationTips": [
+          "Keep a reusable water bottle at your desk and refill it regularly.",
+          "Set reminders on your phone to drink water every hour.",
+          "Infuse water with cucumber, mint, or lemon for added flavor.",
+          "Drink a glass of water before each meal to aid digestion and satiety."
+        ]
+      },
+      "weeklyMealPlan": [
+        {
+          "day": "Monday",
+          "breakfast": "Oats with Berries & Nuts",
+          "lunch": "Spinach & Paneer Curry with Brown Rice & Lentil Dal",
+          "dinner": "Mixed Vegetable and Chickpea Stir-fry with Whole Wheat Roti",
+          "snack": "Greek Yogurt with Apple & Walnuts",
+          "approxCalories": 1750
+        },
+        {
+          "day": "Tuesday",
+          "breakfast": "Scrambled Paneer (Bhurji) with 2 Whole Wheat Toasts",
+          "lunch": "Lentil (Masoor Dal) Soup with Quinoa Salad (cucumber, tomato, bell pepper)",
+          "dinner": "Tofu & Vegetable Skewers with Mint Chutney",
+          "snack": "Handful of roasted chana (chickpeas) and an orange",
+          "approxCalories": 1700
+        },
+        {
+          "day": "Wednesday",
+          "breakfast": "Smoothie: Spinach, banana, almond milk, protein powder",
+          "lunch": "Rajma (Kidney Bean) Curry with Brown Rice and a side salad",
+          "dinner": "Vegetable Pulao (brown rice based) with Raita (yogurt dip)",
+          "snack": "Small bowl of sprouts salad",
+          "approxCalories": 1750
+        },
+        {
+          "day": "Thursday",
+          "breakfast": "Oats with Berries & Nuts",
+          "lunch": "Leftover Rajma Curry with Brown Rice",
+          "dinner": "Paneer Tikka (grilled paneer) with roasted vegetables",
+          "snack": "A pear and a small handful of almonds",
+          "approxCalories": 1700
+        },
+        {
+          "day": "Friday",
+          "breakfast": "Whole Wheat Paratha (1) with a small bowl of plain yogurt",
+          "lunch": "Vegetable & Lentil Soup with a whole grain bread roll",
+          "dinner": "Chana Masala (chickpea curry) with 2 small whole wheat rotis",
+          "snack": "Cucumber and carrot sticks with hummus",
+          "approxCalories": 1750
+        },
+        {
+          "day": "Saturday",
+          "breakfast": "Besan Cheela (savory chickpea pancake) with green chutney",
+          "lunch": "Mixed Vegetable and Paneer Biryani (brown rice based)",
+          "dinner": "Spinach Dal (lentil soup with spinach) with a side of steamed greens",
+          "snack": "Fruit salad (berries, apple, orange)",
+          "approxCalories": 1700
+        },
+        {
+          "day": "Sunday",
+          "breakfast": "Greek Yogurt with Apple & Walnuts",
+          "lunch": "Leftover Mixed Vegetable and Paneer Biryani",
+          "dinner": "Lentil and Vegetable Stew with a small whole wheat bread",
+          "snack": "A handful of makhana (fox nuts)",
+          "approxCalories": 1750
+        }
+      ],
+      "workoutPlan": {
+        "title": "Intermediate Full-Body Strength & Cardio for Weight Loss",
+        "difficulty": "Intermediate",
+        "durationMinutes": 45,
+        "caloriesBurnedEst": 350,
+        "isRestDay": false,
+        "warmup": [
+          "5 minutes light cardio (e.g., marching in place, jumping jacks)",
+          "Dynamic stretches: Arm circles, leg swings, torso twists"
+        ],
+        "mainWorkout": [
+          {
+            "name": "Bodyweight Squats",
+            "setsRepsOrDuration": "3 sets x 15 reps",
+            "targetMuscleOrBenefit": "Quadriceps, Glutes, Hamstrings"
+          },
+          {
+            "name": "Push-ups (on knees or full)",
+            "setsRepsOrDuration": "3 sets x 10-12 reps",
+            "targetMuscleOrBenefit": "Chest, Shoulders, Triceps, Core"
+          },
+          {
+            "name": "Walking Lunges",
+            "setsRepsOrDuration": "3 sets x 10 reps per leg",
+            "targetMuscleOrBenefit": "Glutes, Quadriceps, Hamstrings"
+          },
+          {
+            "name": "Plank",
+            "setsRepsOrDuration": "3 sets x 30-45 seconds hold",
+            "targetMuscleOrBenefit": "Core strength"
+          },
+          {
+            "name": "Dumbbell Rows (or Resistance Band Rows)",
+            "setsRepsOrDuration": "3 sets x 12-15 reps per arm",
+            "targetMuscleOrBenefit": "Upper Back, Biceps"
+          },
+          {
+            "name": "Burpees (modified without push-up if needed)",
+            "setsRepsOrDuration": "3 sets x 8-10 reps",
+            "targetMuscleOrBenefit": "Full body cardio and strength"
+          }
+        ],
+        "stretching": [
+          "Hamstring stretch (seated or standing)",
+          "Quad stretch (standing)",
+          "Chest opener (doorway stretch)",
+          "Triceps stretch"
+        ],
+        "cooldown": [
+          "5 minutes light walking or gentle cycling",
+          "Deep diaphragmatic breathing for relaxation"
+        ]
+      },
+      "weeklyGoals": [
+        "Drink 3.0 Liters of water daily for 7 days.",
+        "Complete 4-5 workout sessions this week.",
+        "Achieve 8 hours of quality sleep per night.",
+        "Incorporate at least one new vegetable into your meals.",
+        "Take a 10-minute walk during your workday."
+      ],
+      "dailyTasks": [
+        {
+          "id": "t1",
+          "title": "Drink 3.0 Litres of Water",
+          "category": "Hydration",
+          "time": "All Day",
+          "points": 20,
+          "completed": false
+        },
+        {
+          "id": "t2",
+          "title": "Walk 8,000 Steps",
+          "category": "Fitness",
+          "time": "Evening",
+          "points": 25,
+          "completed": false
+        },
+        {
+          "id": "t3",
+          "title": "Eat Balanced Nutrient Breakfast",
+          "category": "Diet",
+          "time": "Morning",
+          "points": 15,
+          "completed": false
+        },
+        {
+          "id": "t4",
+          "title": "Complete 45-min Workout Routine",
+          "category": "Fitness",
+          "time": "Afternoon",
+          "points": 25,
+          "completed": false
+        },
+        {
+          "id": "t5",
+          "title": "Sleep 8 Hours Nightly",
+          "category": "Recovery",
+          "time": "Night",
+          "points": 15,
+          "completed": false
+        }
+      ],
+      "healthyHabits": [
+        "10-minute morning sunlight exposure (helps regulate sleep cycle)",
+        "Chew food slowly and mindfully to aid digestion and satiety.",
+        "No screens 30-60 minutes before bedtime to improve sleep quality.",
+        "Take short stretching breaks every hour during work.",
+        "Practice 5 minutes of deep breathing before bed."
+      ],
+      "foodsToPrefer": [
+        "Leafy greens (Spinach, Kale) & colorful berries",
+        "Lean plant proteins (Paneer, Lentils, Chickpeas, Tofu, Greek Yogurt)",
+        "Whole grains (Oats, Brown Rice, Quinoa, Whole Wheat Roti)",
+        "Healthy fats (Almonds, Walnuts, Olive oil, Avocado)",
+        "Variety of vegetables (Bell peppers, Broccoli, Carrots)"
+      ],
+      "foodsToAvoid": [
+        "Refined sugars & sugary sodas/juices",
+        "Deep-fried foods and excessive oil",
+        "Ultra-processed snacks and packaged foods",
+        "Excessive sodium (found in many processed foods)",
+        "Artificial sweeteners and trans fats"
+      ],
+      "motivationMessage": "Your dedication to your health is inspiring! Every small, consistent effort you make today is building a stronger, healthier, and happier you for tomorrow. Believe in your progress!",
+      "weeklyChallenge": {
+        "title": "Hydration & Movement Streak",
+        "target": "Successfully complete the 'Drink 3.0 Liters of Water' and 'Walk 8,000 Steps' daily tasks for 5 consecutive days.",
+        "durationDays": 7,
+        "rewardPoints": 150
+      },
+      "progressTips": [
+        "Track your water intake using an app or a marked bottle throughout the day.",
+        "Log your meals and how you feel after eating to identify patterns and preferences.",
+        "Keep a sleep journal to note bedtime, wake time, and sleep quality.",
+        "Celebrate small victories to stay motivated and reinforce positive habits."
+      ],
+      "disclaimer": "This AI Personalized Health Plan is designed solely for wellness and lifestyle guidance. It does not constitute medical diagnosis, clinical advice, or treatment. Always consult with a qualified healthcare professional for any health concerns or before making significant changes to your diet or exercise routine."
+    },
+    "dailyLogs": [
+      {
+        "date": "2026-07-20",
+        "completedTaskIds": [
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ],
+        "waterIntakeLiters": 4,
+        "sleepHours": 7.5,
+        "sleepQuality": "Good",
+        "weight": 72,
+        "mood": "Good",
+        "energyLevel": 8
+      },
+      {
+        "date": "2026-07-21",
+        "completedTaskIds": [
+          "t1"
+        ],
+        "waterIntakeLiters": 4,
+        "sleepHours": 7.5,
+        "sleepQuality": "Good",
+        "weight": 70
+      }
+    ],
+    "weeklyReviews": [],
+    "chatHistory": [],
+    "notifications": {
+      "waterReminders": true,
+      "waterTime": "09:00 AM",
+      "mealReminders": true,
+      "workoutReminders": true,
+      "sleepReminders": true,
+      "weeklyReviewReminders": true,
+      "dailyMotivationReminders": true
+    },
+    "active": true,
+    "createdAt": "2026-07-20T11:19:04.678Z"
+  }
+]

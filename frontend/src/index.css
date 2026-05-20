@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --text: #a1a1aa;
+  --text-h: #f4f4f5;
+  --bg: #000000;
+  --border: #27272a;
+  --code-bg: #18181b;
+  --accent: #0ea5e9;
+  --accent-bg: rgba(14, 165, 233, 0.1);
+  --accent-border: rgba(14, 165, 233, 0.4);
+  --social-bg: rgba(39, 39, 42, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.6) 0 10px 15px -3px, rgba(0, 0, 0, 0.4) 0 4px 6px -2px;
+
+  --sans: 'Outfit', system-ui, -apple-system, sans-serif;
+  --heading: 'Outfit', system-ui, -apple-system, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: dark light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not(.dark) {
+    --text: #4b5563;
+    --text-h: #0f172a;
+    --bg: #ffffff;
+    --border: #e2e8f0;
+    --code-bg: #f1f5f9;
+    --accent: #0284c7;
+    --accent-bg: rgba(2, 132, 199, 0.08);
+    --accent-border: rgba(2, 132, 199, 0.35);
+    --social-bg: rgba(241, 245, 249, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.05) 0 10px 15px -3px, rgba(0, 0, 0, 0.02) 0 4px 6px -2px;
+  }
+}
+
+:root.light {
+  --text: #4b5563;
+  --text-h: #0f172a;
+  --bg: #ffffff;
+  --border: #e2e8f0;
+  --code-bg: #f1f5f9;
+  --accent: #0284c7;
+  --accent-bg: rgba(2, 132, 199, 0.08);
+  --accent-border: rgba(2, 132, 199, 0.35);
+  --social-bg: rgba(241, 245, 249, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.05) 0 10px 15px -3px, rgba(0, 0, 0, 0.02) 0 4px 6px -2px;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: var(--heading);
+  font-weight: 900;
+  color: var(--text-h);
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--text-h);
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+/* Scrollbar Variables */
+:root {
+  --scrollbar-track: rgba(255, 255, 255, 0.02);
+  --scrollbar-thumb: #38bdf8; /* Light blue (Sky-400) */
+  --scrollbar-thumb-hover: #7dd3fc; /* Lighter blue (Sky-300) */
+}
+
+:root.light {
+  --scrollbar-track: rgba(0, 0, 0, 0.02);
+  --scrollbar-thumb: #0ea5e9; /* Sky-500 */
+  --scrollbar-thumb-hover: #0284c7; /* Sky-600 */
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not(.dark) {
+    --scrollbar-track: rgba(0, 0, 0, 0.02);
+    --scrollbar-thumb: #0ea5e9;
+    --scrollbar-thumb-hover: #0284c7;
+  }
+}
+
+/* Custom Scrollbar Styles for the whole website */
+html {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+/* For all scrollable elements in webkit-based browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+/* ─── Leaflet Map Overrides ──────────────────────────────────────────────────── */
+
+/* Fix z-index conflicts with the app's fixed elements */
+.leaflet-pane { z-index: 1 !important; }
+.leaflet-top, .leaflet-bottom { z-index: 2 !important; }
+.leaflet-control { z-index: 2 !important; }
+
+/* Custom popup styling */
+.leaflet-popup-content-wrapper {
+  border-radius: 16px !important;
+  border: 1px solid rgba(14, 165, 233, 0.15) !important;
+  box-shadow: 0 20px 40px -8px rgba(0,0,0,0.35) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+.leaflet-popup-content {
+  margin: 0 !important;
+  padding: 12px !important;
+  font-family: 'Outfit', system-ui, sans-serif !important;
+}
+.leaflet-popup-tip-container { display: none; }
+.leaflet-popup-close-button {
+  top: 8px !important;
+  right: 10px !important;
+  font-size: 16px !important;
+  color: #94a3b8 !important;
+}
+.leaflet-popup-close-button:hover { color: #e11d48 !important; }
+
+/* Custom zoom controls */
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25) !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+.leaflet-control-zoom a {
+  background: rgba(8, 11, 17, 0.9) !important;
+  color: #94a3b8 !important;
+  border: none !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+}
+.leaflet-control-zoom a:hover {
+  background: rgba(14, 165, 233, 0.2) !important;
+  color: #38bdf8 !important;
+}
+
+/* ─── Custom Hospital Marker ─────────────────────────────────────────────────── */
+.mg-hospital-marker {
+  width: 34px;
+  height: 34px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: linear-gradient(135deg, #f43f5e, #fb923c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 4px 16px rgba(244, 63, 94, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.mg-hospital-marker:hover {
+  box-shadow: 0 6px 24px rgba(244, 63, 94, 0.65);
+}
+.mg-hospital-marker.selected {
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  box-shadow: 0 6px 24px rgba(14, 165, 233, 0.65);
+}
+.mg-hospital-marker svg {
+  transform: rotate(45deg);
+}
+
+/* ─── Custom User Location Marker ──────────────────────────────────────────── */
+.mg-user-marker {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mg-user-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(14, 165, 233, 0.25);
+  animation: mgPulse 2s ease-out infinite;
+}
+.mg-user-dot {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.5);
+}
+@keyframes mgPulse {
+  0%   { transform: scale(0.8); opacity: 0.8; }
+  70%  { transform: scale(2.2); opacity: 0; }
+  100% { transform: scale(0.8); opacity: 0; }
+}
+
+/* ─── Custom Ambulance Marker ────────────────────────────────────────────────── */
+.mg-ambulance-marker {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255,255,255,0.8);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.mg-ambulance-marker:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 24px rgba(16, 185, 129, 0.65);
+}
+
+/* ─── Emergency SOS Pulsing Button Animations ────────────────────────────────── */
+@keyframes sosGlowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7), 0 0 40px rgba(220, 38, 38, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 35px rgba(239, 68, 68, 0), 0 0 80px rgba(239, 68, 68, 0.8);
+    transform: scale(1.03);
+  }
+}
+
+.animate-sos-pulse {
+  animation: sosGlowPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes sosRipple {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.8;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+.mg-ripple-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid rgba(239, 68, 68, 0.6);
+  pointer-events-none: none;
+  animation: sosRipple 2.5s ease-out infinite;
+}
+.mg-ripple-ring-delay {
+  animation-delay: 1.25s;
+}
+
+/* Glassmorphic emergency panels */
+.mg-glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+:root:not(.dark) .mg-glass-panel,
+:root.light .mg-glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+

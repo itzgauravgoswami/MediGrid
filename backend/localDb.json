@@ -1,0 +1,324 @@
+[
+  {
+    "userEmail": "gaurav@medigrid.ai",
+    "fileName": "ynj-N6JYYe4-HD.jpg",
+    "fileSize": 118000,
+    "reportType": "General Lab Report",
+    "riskLevel": "Yellow",
+    "summary": "The provided medical report text is unreadable, making it impossible to analyze any health information or specific findings. A proper, readable report is needed for any assessment.",
+    "structuredData": {
+      "executiveSummary": "The provided medical report text is unreadable, making it impossible to analyze any health information or specific findings. A proper, readable report is needed for any assessment.",
+      "overallHealthStatus": "Unable to assess due to unreadable report text.",
+      "riskLevel": "Yellow",
+      "healthScore": null,
+      "importantFindings": [],
+      "abnormalValues": [],
+      "normalValues": [],
+      "medicalExplanations": [],
+      "recommendations": [
+        "Obtain a clear and readable copy of your medical report for a proper health assessment.",
+        "Maintain a balanced diet with whole foods, lean proteins, and plenty of fruits and vegetables.",
+        "Engage in regular physical activity suitable for your current fitness level.",
+        "Ensure adequate hydration throughout the day by drinking sufficient water.",
+        "Prioritize getting 7-9 hours of quality sleep each night to support overall health."
+      ],
+      "dietSuggestions": {
+        "breakfast": "Oatmeal with berries and a handful of nuts, or scrambled eggs with spinach and whole-wheat toast.",
+        "lunch": "Salad with grilled chicken or chickpeas, diverse vegetables, and a light vinaigrette, or a lentil soup with whole-grain bread.",
+        "dinner": "Baked salmon or lean chicken breast with roasted sweet potatoes and steamed green beans, or a vegetable stir-fry with brown rice.",
+        "snacks": "Fresh fruit (apples, bananas, oranges), a small handful of almonds or walnuts, Greek yogurt, or vegetable sticks with hummus.",
+        "avoid": [
+          "Highly processed foods",
+          "Sugary drinks and excessive sweets",
+          "Foods high in saturated and trans fats",
+          "Excessive sodium intake"
+        ],
+        "nutrients": {
+          "water": "Aim for at least 8 glasses (about 2 liters) of water daily, more if you are active or in a hot climate. Proper hydration supports all bodily functions.",
+          "protein": "Include lean protein sources at each meal, such as poultry, fish, beans, lentils, tofu, or eggs, to support muscle health and satiety.",
+          "iron": "Ensure a balanced intake of iron-rich foods like lean red meat, poultry, fish, fortified cereals, spinach, and lentils, important for energy and blood health.",
+          "fiber": "Increase fiber intake through whole grains, fruits, vegetables, beans, and nuts to aid digestion and promote gut health."
+        }
+      },
+      "exerciseSuggestions": {
+        "suggestions": [
+          "Brisk walking",
+          "Light jogging or cycling",
+          "Swimming",
+          "Yoga or Pilates for flexibility and strength",
+          "Bodyweight exercises (e.g., squats, lunges, push-ups)"
+        ],
+        "plan": "Aim for at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity activity per week, along with muscle-strengthening activities on 2 or more days a week. Listen to your body and start gradually, increasing intensity and duration over time. Consult with your doctor before starting any new exercise program."
+      },
+      "suggestedFollowUpTests": [
+        {
+          "testName": "Comprehensive Metabolic Panel (CMP)",
+          "reason": "To assess kidney and liver function, blood sugar, and electrolyte balance."
+        },
+        {
+          "testName": "Complete Blood Count (CBC)",
+          "reason": "To evaluate red and white blood cells, and platelets, which can indicate various conditions like anemia or infection."
+        },
+        {
+          "testName": "Lipid Panel",
+          "reason": "To measure cholesterol and triglyceride levels, important for cardiovascular health."
+        }
+      ],
+      "questionsToAskDoctor": [
+        "Can I get a clear, readable copy of my medical report?",
+        "What specific tests do you recommend to get a baseline understanding of my overall health?",
+        "Based on my general health and family history, what specific health concerns should I be aware of?",
+        "Are there any general health screenings I should consider given my age and background?",
+        "What are the best practices for maintaining a healthy lifestyle given my current health status?"
+      ],
+      "medicalDisclaimer": "This analysis is for educational purposes only. It is not a medical diagnosis or prescription. Please consult your physician for clinical advice."
+    },
+    "extractedText": "o pre | ) “, | T RGD TBE N",
+    "chatHistory": [
+      {
+        "role": "assistant",
+        "content": "I have analyzed your General Lab Report. Feel free to ask any questions about the parameters or results."
+      }
+    ],
+    "createdAt": "2026-07-20T09:53:28.420Z",
+    "_id": "mock_85va53h6c"
+  },
+  {
+    "userEmail": "gaurav@medigrid.ai",
+    "fileName": "OMC Report Sample - Cardio.pdf",
+    "fileSize": 42876,
+    "reportType": "CBC Report",
+    "riskLevel": "Red",
+    "summary": "This medical report critically reviews the care of a 73-year-old woman who experienced fainting and was found to have aneurysms. It highlights that while some aneurysms were identified, a critical, much larger aneurysm in her lower abdomen was not fully evaluated, which unfortunately led to its rupture and a fatal outcome.",
+    "structuredData": {
+      "executiveSummary": "This medical report critically reviews the care of a 73-year-old woman who experienced fainting and was found to have aneurysms. It highlights that while some aneurysms were identified, a critical, much larger aneurysm in her lower abdomen was not fully evaluated, which unfortunately led to its rupture and a fatal outcome.",
+      "overallHealthStatus": "Attention Needed",
+      "riskLevel": "Red",
+      "healthScore": null,
+      "importantFindings": [
+        {
+          "icon": "Heart",
+          "heading": "Aneurysm in Chest/Upper Abdomen",
+          "explanation": "An expansion (aneurysm) of a major blood vessel measuring 4.9-5.0 cm was discovered near the chest and upper belly, along with another small one. This type of finding requires careful monitoring.",
+          "priority": "High"
+        },
+        {
+          "icon": "AlertTriangle",
+          "heading": "Undetected Large Abdominal Aneurysm",
+          "explanation": "A very large aneurysm (over 8 cm) in the main artery of the lower abdomen was not initially detected or fully evaluated, which later ruptured. Such large aneurysms pose a critical, life-threatening risk.",
+          "priority": "High"
+        },
+        {
+          "icon": "Activity",
+          "heading": "Fainting Episodes (Syncope)",
+          "explanation": "The patient experienced episodes of losing consciousness, which were thoroughly investigated and linked to an underlying irregular heart rhythm.",
+          "priority": "Medium"
+        },
+        {
+          "icon": "Heart",
+          "heading": "Irregular Heart Rhythm (Atrial Fibrillation)",
+          "explanation": "The patient developed episodes of a fast and irregular heartbeat, known as paroxysmal atrial fibrillation, which can be a cause of fainting and requires careful management.",
+          "priority": "Medium"
+        },
+        {
+          "icon": "Pill",
+          "heading": "Pre-existing Health Conditions",
+          "explanation": "The patient had a history of high blood pressure (hypertension), an underactive thyroid (hypothyroidism), and depression, which are important factors for overall health management.",
+          "priority": "Low"
+        }
+      ],
+      "abnormalValues": [
+        {
+          "parameter": "D-dimer",
+          "value": "Elevated",
+          "referenceRange": "Normal (not specified, but elevated is abnormal)",
+          "status": "Yellow",
+          "explanation": "An elevated D-dimer can indicate that your body is breaking down blood clots, which could suggest the presence of a clot or other conditions that cause clotting and subsequent breakdown. This finding prompted further scans in the chest."
+        },
+        {
+          "parameter": "Thoracic Aortic Aneurysm Size",
+          "value": "4.9-5.0 cm",
+          "referenceRange": "Typically <3 cm",
+          "status": "Red",
+          "explanation": "An aneurysm is a ballooning or weak spot in a major blood vessel. This size, found in the main artery in your chest and upper abdomen, is significant and requires close medical attention and monitoring due to the risk of complications."
+        },
+        {
+          "parameter": "Infrarenal Abdominal Aortic Aneurysm Size",
+          "value": ">8 cm",
+          "referenceRange": "Typically <3 cm",
+          "status": "Red",
+          "explanation": "This refers to an extremely large ballooning in the main artery below the kidneys in your abdomen. This size is considered critical and carries a very high risk of rupture, which is a life-threatening emergency."
+        },
+        {
+          "parameter": "Hemoglobin Concentration",
+          "value": "11.2 gm/dl (previously 15.4 gm/dl)",
+          "referenceRange": "Approx. 12-16 gm/dl for adult women",
+          "status": "Red",
+          "explanation": "Hemoglobin is the protein in your red blood cells that carries oxygen throughout your body. A significant drop like this indicates substantial acute blood loss, often from internal bleeding."
+        },
+        {
+          "parameter": "Hematocrit",
+          "value": "31.9% (previously 45.2%)",
+          "referenceRange": "Approx. 37-47% for adult women",
+          "status": "Red",
+          "explanation": "Hematocrit measures the percentage of red blood cells in your blood. A sharp decrease reflects acute blood loss, similar to the hemoglobin drop, indicating a serious internal bleeding event."
+        }
+      ],
+      "normalValues": [
+        {
+          "parameter": "Initial CBC and Electrolyte Panel",
+          "value": "Normal",
+          "referenceRange": "Within normal limits"
+        },
+        {
+          "parameter": "Initial Vital Signs",
+          "value": "Stable",
+          "referenceRange": "Within normal range"
+        },
+        {
+          "parameter": "Initial Heart Rhythm",
+          "value": "Normal Sinus Rhythm",
+          "referenceRange": "Normal"
+        },
+        {
+          "parameter": "Nuclear Stress Test for Ischemia",
+          "value": "Negative",
+          "referenceRange": "No signs of insufficient blood flow to the heart muscle"
+        },
+        {
+          "parameter": "Echocardiogram Left Ventricular Function",
+          "value": "Normal",
+          "referenceRange": "Normal pumping action of the heart's main chamber"
+        },
+        {
+          "parameter": "Carotid Duplex Scan",
+          "value": "No significant disease",
+          "referenceRange": "No major blockages or narrowing in neck arteries"
+        }
+      ],
+      "medicalExplanations": [
+        {
+          "term": "Syncope",
+          "explanation": "Syncope is the medical term for fainting, which is a temporary loss of consciousness due to a sudden drop in blood flow to the brain."
+        },
+        {
+          "term": "Hypertension",
+          "explanation": "Hypertension is the medical term for high blood pressure, a condition where the force of blood against your artery walls is consistently too high, which can damage blood vessels over time."
+        },
+        {
+          "term": "Hypothyroidism",
+          "explanation": "Hypothyroidism is a condition where your thyroid gland doesn't produce enough thyroid hormones, which are crucial for regulating your body's metabolism."
+        },
+        {
+          "term": "D-dimer",
+          "explanation": "D-dimer is a protein fragment that's made when a blood clot dissolves in your body. An elevated level can suggest that there might be a blood clot forming and breaking down somewhere, but it can also be raised by other conditions like infection or surgery."
+        },
+        {
+          "term": "Aneurysm",
+          "explanation": "An aneurysm is a bulge or ballooning in the wall of an artery, similar to a weak spot on a tire. It occurs when a blood vessel wall weakens and expands, and can be dangerous if it ruptures (bursts)."
+        },
+        {
+          "term": "Thoracic Aorta",
+          "explanation": "The thoracic aorta is the part of your body's largest artery (the aorta) that runs through your chest."
+        },
+        {
+          "term": "Infrarenal Abdominal Aorta",
+          "explanation": "The infrarenal abdominal aorta is the section of your body's largest artery (the aorta) that runs through your belly, specifically below where the kidney arteries branch off."
+        },
+        {
+          "term": "Ectasia",
+          "explanation": "Ectasia refers to the widening or dilation of a blood vessel, meaning it's broader than normal, but usually not as severely ballooned as an aneurysm."
+        },
+        {
+          "term": "Atherosclerotic Changes",
+          "explanation": "Atherosclerotic changes describe the hardening and narrowing of arteries due to the buildup of plaque, which is a fatty, cholesterol-rich substance. This can make blood vessels stiff and less flexible."
+        },
+        {
+          "term": "Paroxysmal Atrial Fibrillation with Rapid Ventricular Response",
+          "explanation": "This is a type of irregular and often fast heartbeat that starts suddenly and can stop on its own, but sometimes requires treatment. The 'rapid ventricular response' means the lower chambers of the heart are beating too quickly."
+        },
+        {
+          "term": "Sick Sinus Syndrome",
+          "explanation": "Sick sinus syndrome is a condition where the heart's natural pacemaker (the sinus node) doesn't work correctly, leading to irregular heart rhythms that can be too fast, too slow, or alternate between the two."
+        },
+        {
+          "term": "Hemoglobin",
+          "explanation": "Hemoglobin is a vital protein found in your red blood cells. Its main job is to carry oxygen from your lungs to all parts of your body and to bring carbon dioxide back to your lungs to be exhaled."
+        },
+        {
+          "term": "Hematocrit",
+          "explanation": "Hematocrit is a measurement of the percentage of your blood volume that is made up of red blood cells. It gives an idea of how many red blood cells you have in proportion to your total blood volume."
+        },
+        {
+          "term": "Ruptured Aneurysm",
+          "explanation": "A ruptured aneurysm means that the weak, ballooned part of an artery has burst, leading to internal bleeding. This is a medical emergency and can be life-threatening."
+        }
+      ],
+      "recommendations": [
+        "Ensure comprehensive imaging of the entire aorta if any aneurysm is detected in one section, as aneurysms can occur in multiple locations.",
+        "Strictly follow your doctor's recommendations for managing high blood pressure and any heart rhythm conditions.",
+        "Maintain regular follow-up appointments with vascular specialists and cardiologists if you have known aneurysms or heart issues.",
+        "Pay close attention to any new or worsening symptoms, especially abdominal pain, back pain, or fainting spells, and seek immediate medical attention if they occur.",
+        "Discuss with your doctor about your family history of aneurysms or heart disease, as this can influence screening recommendations."
+      ],
+      "dietSuggestions": {
+        "breakfast": "Oatmeal with berries and a handful of nuts (to support heart health and provide fiber).",
+        "lunch": "Lean grilled chicken or fish salad with plenty of mixed greens and a light vinaigrette dressing (for lean protein and essential nutrients).",
+        "dinner": "Baked salmon with steamed broccoli and quinoa (rich in Omega-3 fatty acids for heart health, fiber, and whole grains).",
+        "snacks": "Apple slices with a small amount of almond butter, or a handful of unsalted almonds. Low-sodium vegetable sticks.",
+        "avoid": [
+          "Highly processed foods",
+          "Foods high in saturated and trans fats",
+          "Excessive sodium (salt)",
+          "Sugary drinks and snacks"
+        ],
+        "nutrients": {
+          "water": "Stay well-hydrated throughout the day by drinking at least 8 glasses of water, unless advised otherwise by your doctor.",
+          "protein": "Include lean protein sources like chicken, fish, beans, and lentils to support overall body health and repair.",
+          "iron": "While this report shows acute blood loss, generally include iron-rich foods like lean red meat, spinach, and fortified cereals to maintain healthy blood counts. Discuss iron supplements with your doctor if needed.",
+          "fiber": "Increase your intake of fiber through whole grains, fruits, and vegetables to support digestive health and help manage cholesterol levels."
+        }
+      },
+      "exerciseSuggestions": {
+        "suggestions": [
+          "Brisk walking (30 minutes most days)",
+          "Light cycling (on a stationary bike or flat terrain)",
+          "Swimming (gentle, low-impact exercise)",
+          "Chair yoga or gentle stretching (to improve flexibility and reduce stress)"
+        ],
+        "plan": "Aim for at least 150 minutes of moderate-intensity exercise per week, spread across most days. Begin with short sessions (10-15 minutes) and gradually increase duration as tolerated. Always consult your doctor before starting any new exercise program, especially with heart conditions or aneurysms, to ensure it's safe for you."
+      },
+      "suggestedFollowUpTests": [
+        {
+          "testName": "Comprehensive Aortic Imaging (CT Angiography or MRI)",
+          "reason": "If any aneurysm is detected, a full scan of the entire aorta (from chest to pelvis) should be considered to rule out other aneurysms, particularly in areas like the abdominal aorta."
+        },
+        {
+          "testName": "Regular Aneurysm Surveillance (Ultrasound or CT)",
+          "reason": "For known aneurysms, periodic imaging is crucial to monitor their size and stability and to determine the optimal timing for intervention."
+        },
+        {
+          "testName": "Cardiac Evaluation and Monitoring",
+          "reason": "For irregular heart rhythms like atrial fibrillation, ongoing cardiology follow-up, possibly including ECGs, Holter monitoring, or other cardiac tests, is important to manage the condition and prevent complications like stroke."
+        }
+      ],
+      "questionsToAskDoctor": [
+        "Given my health history, what is my individual risk of developing an aneurysm, and what screening schedule is recommended for me?",
+        "If an aneurysm is detected in one area, what specific imaging should be done to evaluate the entire aorta?",
+        "What are the warning signs or symptoms of an aneurysm rupture, and what should I do if I experience them?",
+        "How do my current medications (e.g., for blood pressure, thyroid, heart rhythm) impact my aneurysm risk or management?",
+        "What specific lifestyle modifications (diet, exercise, stress management) are most important for my cardiovascular health and aneurysm prevention/management?"
+      ],
+      "medicalDisclaimer": "This analysis is for educational purposes only. It is not a medical diagnosis or prescription. Please consult your physician for clinical advice."
+    },
+    "extractedText": "Case:MD09 Physician: MD Date:August8,2009MedicalConsultant: MD 1.DetailedChronologicalAnalysis:ThecomplaintinitiatedbytheArizonaMedicalBoardagainst MDallegesthattherewasafailuretoevaluateapatient, withsyncopeandathoracicaneurysmforanabdominalaneurysm. Thepatientwasa73yearoldfemalewithahistoryofhypertension,hypothyroidismanddepression whopresentedtothe Hospitalemergencydepartmenton03/16/2006withthechief complaintofsyncope.Twodayspriortoadmission,thepatientpassedoutasshewasgettingoutofthe shower.Shedoesnotrecallthelengthoftimethatshewasunconscious.Sheadmittedtoexperiencing atleastonesimilarepisodepreviously.Shealsoadmittedtoneverhavingamedicalworkupforthis. ThepatientwasinTucson,visitingfromSacramento,Ca. Accordingtothedocumentedinitialevaluationbytheemergencydepartmentphysicianat Hospital,theonlypertinentphysicalfindingwasarightperiorbitalhematoma.Hervitalsignswere stableandshewasinanormalsinusrhythm.ThediagnosticworkupshowedanormalCBCand electrolytepanelbutshedidhaveanelevatedddimer.Thechestxray,anAPportable,showeda prominentaorticknobandcalcificationofsame.TheCTscanofthebrainshowedarightlateral maxillarysinuswallfracturewithbloodinthesinuscavity.Theelevatedddimerpromptedtheordering ofaCTscanofthepulmonaryarteries.Thisexaminationshowednoevidenceofpulmonaryembolibut itdiddemonstrateectasiaanddiffuseatheroscleroticchangesofthethoracicaortaaswellasadiscreet aneurysmmeasuring4.95.0cmatthelevelofthediaphragm.Asecondsmallaneurysmwasalsonoted intheproximalceliacartery.ThescanstoppedatthislevelandIcanfindnoimagesoftherestofthe abdominalaorta. Baseduponthefindingofthescan,avascularsurgicalconsultationwasobtained.Dr. evaluatedthepatient.Hedocumentedanormalphysicalexaminationincludingtheneckand abdomen.Hisrecommendationswerethattheworkupforsyncopeshouldcontinuebecausethe patientrequirednoacuteinterventionforthethoracoproximalabdominalaorticaneurysmandadded thattheaneurysmshouldbefollowedfrequentlybyavascularsurgeoninherhometownof Sacramento,Ca.ThepatientactuallyexpressedadesireforthisasDr. didoffertohavethe aneurysmtakencareofinTucson. Becauseofthediscoveryofthethoracoproximalabdominalaorticaneurysmandinspiteofthenormal physicalexamination,theentireaortashouldhavebeenimagedradiographicallyorsonographically. Thepatientremainedstablethroughoutthesubsequenthospitalizationandwasfoundtohave witnessedandwelldocumentedepisodesofparoxysmalatrialfibrillationwitharapidventricular response.Thisindicatesasicksinussyndromeandthemostlikelyetiologyofhersyncope. -- 1 of 4 -- Thecardiologist,Dr. determinedthatbecauseofthepatient’scardiacissues,sheshould beanticoagulatedandworkedupforcoronaryarterydisease.Inadditionshewasimmediatelystarted onantiarrythmicmedication.Shedidundergoanuclearstresstestwhichwasnegativeforischemia andanechocardiogramcorroboratednormalleftventricularfunction. Onhisweekendrounds,Dr. orderedacarotidduplexscanon3/18/2006whichshowedno hemodynamicallysignificantextracranialcarotiddisease. Thepatientwasdischargedfrom Hospitalon3/19/2006onwarfarin,sotalol,vytorin,and keflex.Shewastobefollowedby asanoutpatient.Shewasinanormalsinusrhythm atthetimeofherdischarge. On3/21/2006,twodaysfollowingherdischargefrom Hospital,shepresentedtothe MedicalCentercomplainingofatwodayhistoryofrightlowerquadrantpain.The painstartedinherrightlowerquadrantandgroinonthedaypriortoadmissionwithprogressive worsening.Thepainwasgradualinonsetandradiatedaroundtoherlowerbackonthesameside.This symptomcomplexincludednauseaandvomiting.Duringhertransporttothehospitalbyprivate vehicle,shehadabriefepisodeofnonresponsivenessassociatedwithbladderandbowelincontinence. UponpresentationtotheemergencydepartmentherBPwas124/67witharegularpulseof54beats perminuteandshewasfullyawakeandoriented.Herphysicalexaminationwasremarkableformild rightlowerquadrantandperiumbilicaltenderness.Therewasnoreboundtendernessorguarding noted.Distallowerextremitypulseswerenotdocumentedintherecord.Thehemoglobin concentrationwas11.2gm/dlandhematocrit31.9%ascomparedto15.4and45.2%on3/17/2006. Accordingtotheemergencydepartmentphysician,anacuteaorticdissectionwashighonthe differentialdiagnosislist.Becauseofthis,aCTscanwithcontrastoftheabdomenwasorderedstat.It wasobviousonthisexaminationthatthepatienthadarupturedinfrarenalabdominalaorticaneurysm measuringgreaterthan8cminmaximaldiameter.Thepatientwastakentotheoperatingtheater immediately. Intraoperatively,thepatientwasfoundtohaveafreelyruptured8.3cmbilobedinfrarenalabdominal aorticaneurysmwithalargeamountofbloodintherightretroperitonealspaceandfreebloodinthe peritonealcavity. Anattempttorepairsamewasundertakenbutthepatientexpiredontheoperatingtable.She essentiallyhaduncontrollablehemorrhageapparentlyfromalaceratedleftrenal/gonadalveincomplex, mostlikelyiatrogenicoccurringduringthehasteinattemptingtocontroltheaortaproximaltothe rupturedarea. 2.ProposedStandardofCare:Thestandardofcareina73yearoldpatientwithahistoryof hypertension,andanewlydiscoveredasymptomatic4.95.0cmaorticaneurysmatthelevelofthe diaphragmandceliacarteryinvolvement,istoevaluatetheentireabdominalaortatoruleouta significantinfrarenalcomponent.Vascularsurgeonsarefullyawarethegreaterthan90%ofAortic -- 2 of 4 -- Aneurysmsarelocatedintheinfrarenalaorta.Thedearthorabsenceofsymptomsreferabledirectlyto theaneurysmdoesnotprecludetheevaluationoftheentireaorta. Iconclude,therefore,thatthestandardofcarewasnotmetinthiscase. 3.DeviationFromTheStandardofCare:Failuretoimagetheentireabdominalaortaintheknown presenceofthoracoproximalabdominalaorticaneurysm. 4.ActualHarmIdentified:Thepatient’sdemisefromaverylargerupturedinfrarenalabdominalaortic aneurysmwhichhadnotbeendetectedduetolackofanappropriateindexofsuspicionandsubsequent failuretohavetheabdominalaortaimaged. 5.PotentialHarmIdentified:Thepotentialharmwasthefailuretodetectthisverylargeinfrarenal abdominalaorticaneurysmpredisposingittorupture. 6.AggravatingFactors:Therearenoaggravatingfactorswhichwouldindicateegregiousbehavior. 7.MitigatingFactors:Thefocusofthispatient’scauseforhospitalizationwasthesyncopalepisode whichsheexperienced.IamstillunsurenoramIabletogleananyinformationastowhytheverylarge infrarenalabdominalaorticaneurysmwasnotpalpablebyseveraldifferentexaminersinapatientwith aBMIof24.9.Also,Idonotseedocumentationofanyexaminerplacingastethoscopeonthepatient’s abdomentoauscultateforbruits.InhisresponselettertotheBoard,Dr. statesthathe examinedthepatient’sabdomenbuthisprogressnotesdonotreflectthis.Ifthefailuretodetectthe infrarenalabdominalaorticaneurysmhasanymitigatingfactors,itisthefocusonthepatient’sworkup fortheproblemathandandattributingthethoracoproximalabdominalaorticaneurysmtobeingan asymptomaticincidentalfindingonapulmonaryarteryscan.However,theindexofsuspicionfor additionalinvolvementoftheaortadistallyshouldhavebeenmuchhigher. 8.Consultant’sSummary:BaseduponmyknowledgeandexperienceasaCardiovascularandThoracic surgeonforthepast23years,Iconcludethatthepatient,Ms. wasnotcompletely workedupinordertoexcludeaninfrarenalabdominalaorticaneurysm. Over90%ofdegenerativeoratheroscleroticaneurysmsdevelopintheinfrarenalsegmentoftheaorta. Knowingthatthepatienthadsignificantectasiaoftheascending,tranverseanddescendingthoracic aortaalongwithsignificanteccentriccalcificationoftheaorticwall,inadditiontotheknown4.95.0cm ratherdiscreetaneurysmofthedistalthoracicproximalabdominalaortaandceliacartery,isan indicationforimagingtherestoftheintraabdominalaortaregardlessofthepatient’ssymptoms.The vastmajorityofinfrarenalaneurysmsareasymptomatic. AnotherfactthatIhavedifficultyreconcilingisthelackofphysicalfindingsonthemultipleabdominal examinationswhichthepatientunderwentbyseveraldifferentphysicians.Myreasonfordoubtstems fromthefactthatthepatient’saneurysmmeasured8.3cminmaximaldiameterandherBMIwas24.9. Ananeurysmofthissizedoesnotgrowtothismagnitudeinashortperiodoftime.Also,whenDr. examinedthepatient’sabdomenashestatesinhisresponselettertotheboard,heshould havestatedsoinhiswrittenprogressnotes. -- 3 of 4 -- Hadtheabdominalaortabeenimagedinitsentirety,theverylargeinfrarenalabdominalaortic aneurysmwouldhavebeendiscoveredandthepatientwouldhaveundergonetheappropriate procedureunderquitedifferentcircumstancesandwithamarkedlyreducedrisk.Inotherwords,she wouldhavenotbeendischargedfrom Hospitalbecauseaninfrarenalabdominalaortic aneurysmthatlargeisanurgent,borderingonemergentindicationforrepair.Therearenotmany vascularsurgeonswhichwoulddisagreewiththisstatement. Inconclusion,thisisamostunfortunatecaseandalthoughanyretrospectivereviewsuchasthisis imperfectbecauseitisdifficulttodeterminetheinvolvedpractioner’sstateofmind,Idobelieve stronglythattheprimaryfocuswasonthepatient’ssyncope.Thiswastotallyandunequivocally appropriateandwonderfullyworkedup.However,whenthe4.9cmaorticaneurysmwasdiscoveredat thelevelofthediaphragmalongwiththeceliacarteryinvolvement,therestoftheaortashouldhave beenimaged.Hadthisbeendonethereisahighprobabilitythattheoutcomewouldhavebeenmuch morefavorable.Imayadd,innouncertainterms,thattheradiologistreadingand/orperformingthe pulmonaryarteryCTscanshouldhavecontinuedimagingtherestoftheaortaatthatjuncture.Idonot thinkhe/sheneededanorderorpermissionforsame. IhavetostatethattheBoard’sallegationof“failuretoevaluateapatientwithsyncopeandthoracic aneurysmforabdominalaorticaneurysm”hasmeritandthecarewhichthispatientreceivedonthis pointfellbelowthestandardofcare. 9.RecordsReviewed: 1.Communicationfrom 7/15/2009 2.Initialcomplaintletter7/15/2009 3.Licenseeresponse7/15/2009 4. HospitalRecords7/15/2009 5. MedicalCenterRecords7/15/2009 6.ImageCD’sfrom Hospital7/22/2009 7.ImageCDfrom Center8/8/2009 Respectfullysubmitted, MD -- 4 of 4 --",
+    "chatHistory": [
+      {
+        "role": "assistant",
+        "content": "I have analyzed your CBC Report. Feel free to ask any questions about the parameters or results."
+      }
+    ],
+    "createdAt": "2026-07-21T11:27:55.212Z",
+    "_id": "mock_hlljv88yl"
+  }
+]
