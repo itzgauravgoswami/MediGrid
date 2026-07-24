@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "env": {
+    "CORS_ORIGIN": "http://localhost:5173,http://localhost:5174,https://medigrid.vercel.app,https://medigrid.gauravgoswami.me,https://medigrid.gauravgoswami.in"
+  },
   "builds": [
     {
       "src": "script.js",
