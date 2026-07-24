@@ -16,6 +16,7 @@ const app = express();
 
 // Security Headers (Helmet)
 app.use(helmet({
+  crossOriginOpenerPolicy: { policy: 'same-origin-allow-popups' },
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
