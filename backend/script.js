@@ -227,7 +227,7 @@ try {
   console.error("DIAGNOSTIC CRITICAL STARTUP ERROR:", error);
   const diagnosticApp = express();
   diagnosticApp.use(cors({ origin: true, credentials: true })); // Enable permissive CORS for testing
-  diagnosticApp.all('*', (req, res) => {
+  diagnosticApp.use((req, res) => {
     res.status(500).json({
       error: "MediGrid Backend Startup Crash",
       message: error.message,
