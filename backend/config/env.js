@@ -53,7 +53,8 @@ const env = {
   NODE_ENV: process.env.NODE_ENV || 'development',
 
   // Security
-  CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:5173',
+  CORS_ORIGIN: process.env.CORS_ORIGIN ||
+    'http://localhost:5173,http://localhost:5174,https://medigrid.vercel.app,https://medigrid.gauravgoswami.me,https://medigrid.gauravgoswami.in',
 
   // Database
   MONGODB_URI: process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/medigrid',

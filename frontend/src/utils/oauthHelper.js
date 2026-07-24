@@ -89,20 +89,34 @@ export function launchOAuthPopup(provider, clientIds) {
     }, POPUP_TIMEOUT_MS);
 
     pollTimer = setInterval(() => {
+      // ── Step 1: Check if popup was closed by the user ──────────────────────
+      // authWindow.closed can throw a SecurityError if Cross-Origin-Opener-Policy
+      // prevents the parent from accessing the popup's properties. We handle
+      // this independently from the cross-origin URL check below.
+      let isClosed = false;
       try {
-        // If user closed the popup manually
-        if (authWindow.closed) {
-          if (!settled) {
-            settled = true;
-            clearTimeout(timeoutTimer);
-            clearInterval(pollTimer);
-            reject(new Error(`${provider} sign-in was cancelled.`));
-          }
-          return;
-        }
+        isClosed = authWindow.closed;
+      } catch (coopError) {
+        // COOP prevented reading window.closed — assume popup is still open.
+        // This is a browser security restriction, not a real error.
+      }
 
-        // This throws a cross-origin error while popup is on the provider's domain.
-        // Once redirected back to our origin, it succeeds.
+      if (isClosed) {
+        if (!settled) {
+          settled = true;
+          clearTimeout(timeoutTimer);
+          clearInterval(pollTimer);
+          reject(new Error(`${provider} sign-in was cancelled.`));
+        }
+        return;
+      }
+
+      // ── Step 2: Try to read the popup URL ──────────────────────────────────
+      // This throws a cross-origin SecurityError while the popup is on the
+      // provider's domain (e.g. accounts.google.com). Once redirected back
+      // to our origin, it succeeds. We catch and silently ignore the cross-
+      // origin error — that case is normal and means "keep waiting".
+      try {
         const popupUrl = authWindow.location.href;
 
         // Still on the provider's login page (different origin) → keep waiting
