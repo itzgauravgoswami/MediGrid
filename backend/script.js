@@ -214,10 +214,14 @@ app.post('/api/create-order', async (req, res) => {
   }
 });
 
-const PORT = env.PORT;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// Only start the HTTP server when running locally.
+// On Vercel (serverless), the app is exported directly — app.listen() is not used.
+if (process.env.VERCEL !== '1') {
+  const PORT = env.PORT;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
 
 module.exports = app;
 
