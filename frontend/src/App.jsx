@@ -14,16 +14,18 @@ import './App.css';
 
 function Layout({ theme, setTheme }) {
   return (
-    <div className="transition-theme min-h-screen relative overflow-hidden bg-white dark:bg-black text-slate-900 dark:text-slate-100">
+    <div className="transition-theme min-h-screen relative overflow-x-hidden bg-white dark:bg-black text-slate-900 dark:text-slate-100">
       
       {/* Absolute Background Grid Layer with Mask */}
       <div className="bg-grid-pattern fixed-grid" />
       <div className="bg-grid-pattern-blurred fixed-grid" />
       
-      {/* Background Glowing Ambient Orbs */}
-      <div className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-sky-500/6 dark:bg-sky-500/6 blur-[120px] pointer-events-none animate-pulse-glow" />
-      <div className="absolute top-[40%] left-[-20%] w-[60vw] h-[60vw] rounded-full bg-indigo-500/4 dark:bg-indigo-500/4 blur-[150px] pointer-events-none animate-pulse-glow" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[45vw] h-[45vw] rounded-full bg-cyan-500/4 dark:bg-cyan-500/4 blur-[120px] pointer-events-none animate-pulse-glow" />
+      {/* Background Glowing Ambient Orbs Wrapped to Prevent Overflow */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="absolute top-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-sky-500/6 dark:bg-sky-500/6 blur-[120px] pointer-events-none animate-pulse-glow" />
+        <div className="absolute top-[40%] left-[-20%] w-[60vw] h-[60vw] rounded-full bg-indigo-500/4 dark:bg-indigo-500/4 blur-[150px] pointer-events-none animate-pulse-glow" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[45vw] h-[45vw] rounded-full bg-cyan-500/4 dark:bg-cyan-500/4 blur-[120px] pointer-events-none animate-pulse-glow" />
+      </div>
 
       {/* Navbar Component */}
       <Navbar theme={theme} setTheme={setTheme} />

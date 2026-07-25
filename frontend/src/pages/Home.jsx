@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { 
   Activity, 
   Calendar, 
@@ -29,6 +29,7 @@ import { BACKEND_URL } from '../config/api';
 
 function Home() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
   const [liveLatency, setLiveLatency] = useState(88);
   const [routedToday, setRoutedToday] = useState(12842);
@@ -68,6 +69,23 @@ function Home() {
       .catch(err => console.error("Error fetching user profile:", err));
     }
   }, []);
+
+  // Smooth scroll handler for landing page anchors and returning to top
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    } else if (location.pathname === '/') {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
+    }
+  }, [location]);
 
   const loadRazorpayScript = () => {
     return new Promise((resolve) => {

@@ -40,12 +40,12 @@ const Navbar = ({ theme, setTheme }) => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '#about-us' },
-    { name: 'Features', href: '#features' },
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'About Us', href: '/#about-us' },
+    { name: 'Features', href: '/#features' },
+    { name: 'How It Works', href: '/#how-it-works' },
+    { name: 'Pricing', href: '/#pricing' },
+    { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'FAQ', href: '/#faq' },
   ];
 
   return (
