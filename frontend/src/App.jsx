@@ -216,8 +216,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout theme={theme} setTheme={setTheme} />}>
-          <Route index element={<Home />} />
+        <Route element={<Layout theme={theme} setTheme={setTheme} />}>
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound theme={theme} setTheme={setTheme} />} />
         </Route>
         
