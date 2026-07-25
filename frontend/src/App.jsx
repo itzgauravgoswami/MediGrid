@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard';
 import Onboarding from './pages/Onboarding';
 import ForgotPassword from './pages/ForgotPassword';
 import CreatePassword from './pages/CreatePassword';
+import NotFound from './pages/NotFound';
 import './App.css';
 
 function Layout({ theme, setTheme }) {
@@ -217,6 +218,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout theme={theme} setTheme={setTheme} />}>
           <Route index element={<Home />} />
+          <Route path="*" element={<NotFound theme={theme} setTheme={setTheme} />} />
         </Route>
         
         {/* Guest only routes */}
